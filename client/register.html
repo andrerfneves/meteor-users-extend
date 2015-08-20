@@ -1,0 +1,72 @@
+<template name="register">
+    <div class="ui vertical center aligned segment">
+        <div class="ui stackable container grid">
+            <div class="row">
+                <div class="sixteen wide column">
+                    <br>
+                    <br>
+                    <br>
+                    <h1 class="ui header">Register</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="four wide column"></div>
+                <div class="eight wide column left aligned">
+                    <div class="ui form" id="register-form" action="action">
+                        <div class="row">
+                            <div class="twelve wide column left aligned">
+                                <div class="field">
+                                    <label>Email</label>
+                                    <div class="ui input">
+                                        <input class="" type="email" placeholder="Email Address" id="email" />
+                                    </div>
+                                </div>
+                                <div class="two fields">
+                                    <div class="field">
+                                        <label>First Name</label>
+                                        <div class="ui input">
+                                            <input class="" type="text" placeholder="First Name" id="first-name" />
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label>Last Name</label>
+                                        <div class="ui input">
+                                            <input class="" type="text" placeholder="Last Name" id="last-name" />
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="two fields">
+                                    <div class="field">
+                                        <label>Password</label>
+                                        <div class="ui input">
+                                            <input class="" type="password" placeholder="Password" id="password" />
+                                        </div>
+                                    </div>
+                                    <div class="field">
+                                        <label>Confirm Password</label>
+                                        <div class="ui input">
+                                            <input class="" type="password" placeholder="Confirm Password" id="password-again" />
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br>
+                        <br>
+                        <div class="row">
+                            <div class="twelve wide column">
+                                <button class="ui blue large button" id="register-button" type="submit">Register</button>
+                                <div class="ui basic segment center aligned top">
+                                    <ul class="extra-links">
+                                        <li><a href="{{pathFor 'login'}}">Login? Click here</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="four wide column"></div>
+            </div>
+        </div>
+    </div>
+</template>

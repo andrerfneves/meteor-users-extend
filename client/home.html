@@ -1,0 +1,11 @@
+<template name="home">
+    {{#with currentUser}}
+    <div class="ui raised segment">
+        <h1 class="ui header">Current User</h1>
+        <p>First Name: {{profile.firstName}}</p>
+        <p>Last Name: {{profile.lastName}}</p>
+        <p>Profile Picture: <img class="ui small circular image" src="{{profile.profPicture}}" /></p>
+        <p>Organization: {{profile.organization}}</p>
+    </div>
+    {{/with}}
+</template>
